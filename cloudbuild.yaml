@@ -12,6 +12,6 @@ steps:
    - '--image'
    - 'eu.gcr.io/saumabha/helloworld-boot-docker:v3'
    - '--region'
-   - 'us-west1-a'
+   - 'us-central1'
   images:
-  - eu.gcr.io/saumabha/helloworld-boot-docker:v3    
+  - 'eu.gcr.io/saumabha/helloworld-boot-docker:v3'    
