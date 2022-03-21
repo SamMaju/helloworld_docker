@@ -10,4 +10,9 @@ public class HelloWorldController {
 	public String HelloWorld(@PathVariable(value = "name") String name){
 		return "Hello " +name+ " Welcome to the world of Java";
 	}
+	
+	@GetMapping("/")
+	public String defaultMapp(){
+		return "Hello ";
+	}
 }
