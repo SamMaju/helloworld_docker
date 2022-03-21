@@ -1,5 +1,3 @@
 steps:
-  - name: 'eu.gcr.io/saumabha'
+  - name: 'eu.gcr.io/cloud-builders/docker'
     args: ['build', '-t', ' eu.gcr.io/saumabha/helloworld-boot-docker:v3', '.']
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', ' eu.gcr.io/saumabha/helloworld-boot-docker:v3']
