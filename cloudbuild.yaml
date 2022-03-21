@@ -1,8 +1,8 @@
 steps:
-  - name: 'eu.gcr.io/saumabha/helloworld-boot-docker'
-    args: ['build', '-t', 'eu.gcr.io/saumabha/helloworld-boot-docker:v3', '.']
-  - name: 'eu.gcr.io/saumabha/helloworld-boot-docker'
-    args: ['push', ' eu.gcr.io/saumabha/helloworld-boot-docker:v3']    
+ - name: 'eu.gcr.io/saumabha/helloworld-boot-docker'
+   args: ['build', '-t', 'eu.gcr.io/saumabha/helloworld-boot-docker:v3', '.']
+ - name: 'eu.gcr.io/saumabha/helloworld-boot-docker'
+   args: ['push', ' eu.gcr.io/saumabha/helloworld-boot-docker:v3']    
  - name: 'eu.gcr.io/saumabha/helloworld-boot-docker
    entrypoint: gcloud
    args:
