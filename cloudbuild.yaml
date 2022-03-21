@@ -1,3 +1,11 @@
 steps:
   - name: 'eu.gcr.io/saumabha/helloworld-boot-docker'
-    args: ['build', '-t', ' eu.gcr.io/saumabha/helloworld-boot-docker:v3', '.']
+    args: ['build', '-t', 'eu.gcr.io/saumabha/helloworld-boot-docker:v3', '.']
+  - name: 'eu.gcr.io/saumabha/helloworld-boot-docker'
+    args: ['push', ' eu.gcr.io/saumabha/helloworld-boot-docker:v3']    
+# Deploy container image to Cloud Run
+  - name: 'eu.gcr.io/saumabha/helloworld-boot-docker'
+    entrypoint: gcloud
+    args: ['run', 'deploy', 'hello-world-service', '--image', 'eu.gcr.io/saumabha/helloworld-boot-docker:v3 ', '--region', 'us-central1']
+  images:
+  - eu.gcr.io/saumabha/helloworld-boot-docker:v3    
