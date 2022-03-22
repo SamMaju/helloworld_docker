@@ -13,6 +13,6 @@ public class HelloWorldController {
 	
 	@GetMapping("/")
 	public String defaultMapp(){
-		return "Hello V2";
+		return "Hello V3";
 	}
 }
