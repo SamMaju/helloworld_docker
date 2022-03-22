@@ -1,5 +1,5 @@
 steps:
  - name: 'eu.gcr.io/saumabha/helloworld-boot-docker'
-   args: ['build', '-t', 'eu.gcr.io/saumabha/helloworld-boot-docker:$COMMIT_SHA', '.']
+   args: ['build', '-t', 'eu.gcr.io/saumabha/helloworld-boot-docker:v2', '.']
  - name: 'eu.gcr.io/saumabha/helloworld-boot-docker'
-   args: ['push', ' eu.gcr.io/saumabha/helloworld-boot-docker:$COMMIT_SHA']    
+   args: ['push', ' eu.gcr.io/saumabha/helloworld-boot-docker:v2']    
