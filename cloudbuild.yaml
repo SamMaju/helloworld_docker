@@ -3,6 +3,6 @@ steps:
    entrypoint: mvn
    args: ['package','-Dmaven.test.skip=true']
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-t', 'eu.gcr.io/saumabha/helloworld-boot-docker', '.']
+   args: ['build', '-t', 'gcr.io/saumabha/helloworld-boot-docker:v3', '.']
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['push', ' eu.gcr.io/saumabha/helloworld-boot-docker']   
+   args: ['push', 'gcr.io/saumabha/helloworld-boot-docker:v3']   
